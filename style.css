@@ -23,7 +23,10 @@
   color: white;
 }
 
-
+@font-face {
+  font-family: Ivar;
+  src:  url('fonts/IvarFine-Light.woff2') format('woff2');
+}
 
 #header{
   transition: 3.2s;
@@ -68,7 +71,7 @@ html, body{
 }
 
 .ImageFillAnimate{
-  border-radius: 3px;
+  border-radius: 0px;
   transition: all .7s;
 }
 .hideme
@@ -118,7 +121,7 @@ mark.blue {
 
 
 .ImageFillAnimate:hover{
-  transform: scale(0.95);
+  transform: scale(0.98);
   transition: all .3s;
 }
 
