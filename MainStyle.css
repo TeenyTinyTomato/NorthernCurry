@@ -1,0 +1,49 @@
+
+::selection {
+    background-color: lightblue;
+    color: white;
+  }
+  
+  /* ** Mozilla based browsers ** */
+  
+  ::-moz-selection {
+    background-color: lightblue;
+    color: white;
+  }
+  
+  /* **For Other Browsers ** */
+  
+  ::-o-selection {
+    background-color: lightblue;
+    color: white;
+  }
+  
+  ::-ms-selection {
+    background-color: lightblue;
+    color: white;
+  }
+  
+  @font-face {
+    font-family: Medline;
+    src:  url('fonts/Medline/Medine-Regular.woff') format('woff2');
+  }
+
+  @font-face {
+    font-family: PinkBrown;
+    src:  url('fonts/PinkBrown/Pink_and_Brown-Regular.woff') format('woff2');
+  }
+
+  @font-face {
+    font-family: Smarta;
+    src:  url('fonts/Smarta/Smarta-Regular.woff') format('woff2');
+  }
+
+  @font-face {
+    font-family: Segatha;
+    src:  url('fonts/Segatha/Segatha.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: Loki;
+    src:  url('fonts/Loki/Loki-Regular.otf') format('opentype');
+  }
