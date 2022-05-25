@@ -1,25 +1,25 @@
 
 ::selection {
-    background-color: lightblue;
+    background-color: #464d33;
     color: white;
   }
   
   /* ** Mozilla based browsers ** */
   
   ::-moz-selection {
-    background-color: lightblue;
+    background-color: #464d33;
     color: white;
   }
   
   /* **For Other Browsers ** */
   
   ::-o-selection {
-    background-color: lightblue;
+    background-color: #464d33;
     color: white;
   }
   
   ::-ms-selection {
-    background-color: lightblue;
+    background-color: #464d33;
     color: white;
   }
   
@@ -47,3 +47,36 @@
     font-family: Loki;
     src:  url('fonts/Loki/Loki-Regular.otf') format('opentype');
   }
+
+  
+
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+    border-radius: 3%;
+  }
+  
+  
+  .buttonPD {
+    background-color: rgb(255, 153, 58);
+    color: white;
+    font-family: 'Medline', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 12px 24px;
+  }
+  
+  .buttonPD:hover {
+    background-color: rgb(182, 111, 45);
+    color: white;
+  }
+  
