@@ -511,7 +511,16 @@
             </div>
           </div>
     </section>
-    
+
+    <script>
+        $(document).ready(function () {
+    target_offset = $('#Chaat').offset(),
+    target_top = target_offset.top;
+    $('html, body').animate({
+        scrollTop: target_top
+    }, 500);
+});
+    </script>
         
         <script src="" async defer></script>
     </body>
