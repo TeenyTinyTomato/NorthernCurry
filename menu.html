@@ -4,524 +4,681 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html style="background-color: rgb(255, 255, 255);">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="logo.svg">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="logo.svg">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.4.2/pixi.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet"> 
-    </head>
-    <body >
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light"
-        style="background-color: rgb(247, 247, 247); -webkit-backdrop-filter: blur(10px) saturate(180%);  backdrop-filter: blur(10px) saturate(180%);  padding-left: 10px; padding-right: 10px;margin-left: 5%;margin-right: 5%;;margin-top: 1%;width: auto;border-radius: 0px;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">NC</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="order.html">Order</a>
-                    </li>
-            </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.4.2/pixi.min.js"></script>
 
-        </div>
-    </nav>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
 
-   
-    <div class="container-fluid"
-        style="height: 80%;background-image: url('images/IMG_4502.jpg');background-position: top;background-repeat: no-repeat;filter: brightness(1);background-size: cover; margin-top: 6%; margin-left: 5%;margin-right: 5%;width: auto;border-radius: 0px;">
-        <center style="font-family: 'Nunito Sans', sans-serif;font-weight: 200 ;font-size: calc(4em + 4vw); padding-top: 19%; color: white;">Menu</center>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light"
+    style="background-color: rgb(247, 247, 247); -webkit-backdrop-filter: blur(10px) saturate(180%);  backdrop-filter: blur(10px) saturate(180%);  padding-left: 10px; padding-right: 10px;margin-left: 5%;margin-right: 5%;;margin-top: 1%;width: auto;border-radius: 0px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">NC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://northern-curry.square.site/">Order</a>
+          </li>
+      </div>
+
     </div>
-    <section id="Chaat">
-        <div class="">
-            <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-                <h1 style="font-family: 'Nunito Sans', sans-serif;font-weight: 400 ;font-size: calc(1em + 1vw); margin-top: 1%;margin-bottom: 5%; color: rgb(17, 17, 17);">Chaats</h1>
-          
-              <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Pani Puri</h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$6.99 </p>
-                </a>
-          
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Dahi Sev Puri</h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$7.99 </p>
-                </a>
-          
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Chole tikki chaat</h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$8.99 </p>
-                </a>
-          
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Bhalle Papdi Chaat</h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$8.99 </p>
-                </a>
-                <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Sprout Chaat</h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$8.99 </p>
-                  </a>
-            
-                  <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Sev Puri</h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$7.99 </p>
-                  </a>
-            
-                  <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Ragda pattice </h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$8.99 </p>
-                  </a>
-            
-                  <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Papdi Chaat</h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$8.99 </p>
-                  </a>
-                  
-                  <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Samosa Chaat</h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$8.99 </p>
-                  </a>
-          
-                <!-- More products... -->
-              </div>
-            </div>
+  </nav>
+
+
+
+  <div class="container-fluid"
+    style="height: 80%;background-image: url('images/IMG_4502.jpg');background-position: top;background-repeat: no-repeat;filter: brightness(1);background-size: cover; margin-top: 6%; margin-left: 5%;margin-right: 5%;width: auto;border-radius: 0px;">
+    <center
+      style="font-family: 'Nunito Sans', sans-serif;font-weight: 200 ;font-size: calc(4em + 4vw); padding-top: 19%; color: white;">
+      Menu</center>
+  </div>
+
+
+  <div>
+      <div class="fixed-bottom left-auto right-10 bg-white rounded-lg shadow-2xl  hover:shadow-lg max-w-fit mx-auto py-3 px-3 mb-3 sm:px-6 lg:px-8 lg:flex lg:items-center lg:justify-between">
+        <div class=" flex lg:mt-0 lg:flex-shrink-0">
+          <div class="inline-flex rounded-md shadow">
+            <a href="https://northern-curry.square.site/" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-400 hover:bg-orange-500">Order Pickup </a>
           </div>
-    </section>
+        </div>
+      </div>
 
-    <section id="Roll">
-        <div class="">
-            <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-                <h1 style="font-family: 'Nunito Sans', sans-serif;font-weight: 400 ;font-size: calc(1em + 1vw); margin-top: 1%;margin-bottom: 5%; color: rgb(17, 17, 17);">Kathi Roll</h1>
-          
-              <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Aloo Tikki Kathi Roll </h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
-                </a>
-          
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Paneer Tikki Kathi Roll </h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
-                </a>
-          
-                <!-- More products... -->
-              </div>
+  </div>
+
+
+  <section id="Chaat">
+    <div class="">
+      <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h1
+          style="font-family: 'Nunito Sans', sans-serif;font-weight: 400 ;font-size: calc(1em + 1vw); margin-top: 1%;margin-bottom: 5%; color: rgb(17, 17, 17);">
+          Chaats</h1>
+
+        <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img
+                src="https://us.123rf.com/450wm/oqba/oqba1911/oqba191100004/134397053-tadeonal-subcontinental-street-snack-food-chickpeas-potato-pani-puri-fuska-with-tamarind-sauce.jpg?ver=6"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
             </div>
-          </div>
-    </section>
+            <h3 class="mt-4 text-sm text-gray-700">Pani Puri</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$6.99 </p>
+          </a>
 
-    <section id="Street Food">
-        <div class="">
-            <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-                <h1 style="font-family: 'Nunito Sans', sans-serif;font-weight: 400 ;font-size: calc(1em + 1vw); margin-top: 1%;margin-bottom: 5%; color: rgb(17, 17, 17);">Street Food</h1>
-          
-              <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Vada Pav </h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$4.99 </p>
-                </a>
-          
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Kachchi Dabeli (2pc) </h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$7.99 </p>
-                </a>
-          
-                <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Pav Bhaji </h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$11.99 </p>
-                  </a>
-            
-                  <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Chole Bhature  </h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
-                  </a>
-            
-                <!-- More products... -->
-              </div>
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://thepanipurihub.com///images/website/menu/sev-puri-near-me-restaurent.png"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
             </div>
-          </div>
-    </section>
+            <h3 class="mt-4 text-sm text-gray-700">Dahi Sev Puri</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$7.99 </p>
+          </a>
 
-    <section id="Curries">
-        <div class="">
-            <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-                <h1 style="font-family: 'Nunito Sans', sans-serif;font-weight: 400 ;font-size: calc(1em + 1vw); margin-top: 1%;margin-bottom: 5%; color: rgb(17, 17, 17);">Curries</h1>
-          
-              <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Veg Kofta Curry </h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
-                </a>
-          
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Palak Paneer</h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
-                </a>
-          
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Achari Mix Veg</h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
-                </a>
-          
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Matar Paneer</h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
-                </a>
-                <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Butter Paneer</h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
-                  </a>
-            
-                  <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Achari Paneer</h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
-                  </a>
-            
-                  <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Chana Masala</h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
-                  </a>
-            
-                  <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Paneer Tikka Masala</h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
-                  </a>
-          
-                <!-- More products... -->
-              </div>
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://www.spiceupthecurry.com/wp-content/uploads/2015/04/aloo-tikki-chole-recipe-7.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
             </div>
-          </div>
-    </section>
+            <h3 class="mt-4 text-sm text-gray-700">Chole tikki chaat</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$8.99 </p>
+          </a>
 
-    <section id="Indo-chinese">
-        <div class="">
-            <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-                <h1 style="font-family: 'Nunito Sans', sans-serif;font-weight: 400 ;font-size: calc(1em + 1vw); margin-top: 1%;margin-bottom: 5%; color: rgb(17, 17, 17);">Indo-Chinese</h1>
-          
-              <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Chili Paneer </h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$11.99 </p>
-                </a>
-          
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Veg Hakka Noodle </h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$11.99 </p>
-                </a>
-          
-                <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Veg Fried Rice </h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$10.99 </p>
-                  </a>
-            
-                  <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Gobi Manchurian</h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$10.99 </p>
-                  </a>
-
-                  <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Veg Manchurian</h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$10.99 </p>
-                  </a>
-            
-                <!-- More products... -->
-              </div>
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://static.toiimg.com/thumb/52727664.cms?width=1200&height=900" alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
             </div>
-          </div>
-    </section>
-
-    <section id="Biryani">
-        <div class="">
-            <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-                <h1 style="font-family: 'Nunito Sans', sans-serif;font-weight: 400 ;font-size: calc(1em + 1vw); margin-top: 1%;margin-bottom: 5%; color: rgb(17, 17, 17);">Biryani</h1>
-          
-              <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Veg Biryani </h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$11.99 </p>
-                </a>
-          
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Paneer Biryani </h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
-                </a>
-            
-                <!-- More products... -->
-              </div>
+            <h3 class="mt-4 text-sm text-gray-700">Bhalle Papdi Chaat</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$8.99 </p>
+          </a>
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img
+                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBQSFBgSEhQYGBgZGBkbGBgYGBgZGhgbGRocGhkbHBkbIC0lHSApIhoZJzclKS4wNDQ0GiM5PzkxPi0yNDABCwsLEA8QHRISHjIpJCkyMjU3PjA1MjI1NjA2MjIwMDA+MjQyNTI4MjUyMjUyOzs1MDUyOzU0MjI1MjIyNTIyMv/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQMEBQYCBwj/xAA5EAACAQMDAgQFAgQFBAMAAAABAhEAAyEEEjEFQRMiUWEGMnGBkUKhFCNSsZLB0eHwFRYzYoKi8f/EABoBAQADAQEBAAAAAAAAAAAAAAACAwQBBQb/xAArEQACAgICAgAFAwUBAAAAAAAAAQIRAyESMQRBEyJRcYFhkbEUoeHw8cH/2gAMAwEAAhEDEQA/APY6KWigEpaKKAKKKKAKSlooAooooApIpaKASKKWigEopaKASilooBIoiiaKAKKWigCKKSaSgFJpKKWKAQUtKKKASilooBIoilooBIpK6pDQCUUUUOHVFLRQ6FJS0UAlLS0lAJRQaIoAopYooApKWkoAopai6nVBMAbmPCjk/wC1DqVjt64EUseBzVXe+ItOmN+4+ign/apt+8Qm7aZjIEGsFr9TtuNcu2QoX5toENHm79j/AJ1l8nNLHVHGmbzp+vt3132zPqMSPrUs15tZ+JRp2C27YjarMggRIEY/Oa41/wAdXHX/AMZtiT8rCfaZ7xmq4+bDinLv6I1w8HNNcktfc313qlpH2NcUH0nOa4fqqBoA8o5Y4+ketecaPriOcKEPDO+RJzuMcfWrPqGoe4gRLiPwZtgjM8EMc+s4qC8y7fRXk8bJjfzKl9fRul1yQCSKet3Q3Fee9Ldrj7POCqy5MCGmMZyK1PTru1DJ5/atuPJGatEZQilpl9RFMaa9ux7c1IqwqCKKKWgEopaKASKIpaSgCiiigCiKKKASiloocFpaKKHQooooArmlooBIpaWigCkpKIoBaIoFNO9AJecgGPSqjpVt1LvcJ3McT/SOP71OfUKJk8Ak+grKL1/xLuzcIGNqQ0iYJB+4wM+1Qnk40vqWwi6ZodZcIGDisT8TWBdtshkTkEcgjPFWPVdJcS4p/irltADAEkOSZO4k8jtjioPVtLFg3HdrjIfEUjA2gEy+IIiqPKSeN/7s04sdtNMxOnCXLhFsNKpLSZkLtHHc96YuXQG2hTkEkSSTGBCgmKc01s7zcWEDAhj8wKkhiApODMGfQfWomqQhlKmGEickQMfecV5aScu/R70bjGqLG3qtgKKDJyS3mkxtGT2AHvVp0XUEyHYKQQQ23zDacx+BWfe8AZackSB654PeY9fzTlzUeXyc7gqgiMkiOPr9OK4obVjNGM4OJvNJr11BNxLmFbbMQSfWIwMd6sBcuKwVwNp+XaZLVGbo1vTWg9vDwJIOCTyI9CZqSdNethb7lNyiBbCjG4xJack168Vwils+ffFdbRd6Q3FHzQO3rHvV1prm5QTWB6pr7mLiXN6/qRYlR7euavOh9cVgqZ+/ai8iLlxKp43XI1FFIDNdVoKBKKWigEiilooBKKWigEopaKA5opaKHBaKKKHQooooAooooDk0GiapfifqAs2T5iGbC7eZp9iUYuTpdkhur2lfw2Ybv2+k1LGqXj8Vgul6Tfb8QgsTJJY1d9D1G7cFBJgAGssc0lKpKifwZK79F810yYP0HemZaZJ+1U1nWOl5luEdoA7T/emeo9dFsFtpdRzBifpVkvIhFJt1ZOOKTdIndahrLoCEJHzRx96znwr0G3Y3aliHVMWvLEHh2zzzAI/9qr+o/Efi2GJtXER/KG3pABMbpnjmuOtaoratObrJatgEW0xJiFLty2P0jAnuRivLlj2n9vv6LFBpcf3JfXuqM7Ess29uUEyzdpPpzjHvUD/uS2ujFpUgsPD2qAVGTC5OBBg47Vn7nWmuOlvxE2s4DEBg4U+oJwe3FMdU0CW9QgtgBdweAxltssQc5kA81ijOXKpvbLlFNVHQ0+4EIZVTiCIJzER24AxOPWnUsy3pA5B9o5+8feu9ZeRouIGUHIVl2sonuvbjH7VG1WoVl/luCO8EbR7Y/wCYqt45br0exHItJ9sk3NKDuVhziCfKJ79sc/vFVdk3NPcQgBlmQSZGPl44I/zrQaDUW7lsO6yQTJJMCBmY55/tVpeOkshdiAvyBuJCtBzMzEYqeHmrSaddlXlSShbT90Fz4ra54dm4gjJcq+SABEE47n8VKHWH1V/altzbUmBgi4SMsc9uB/vVZodJZuKQbbk7wCNxIBgDBMGPaTyea1Gg6P4CtfbaiIrOEVIJgbskt7cYqz42TIqX5PEWSN0itOy5/Mt2troxUqXIGcTt5WPf1p9LL22mCE/qkEg96jPrCxuatrcLskIPnY5EHt2HeqHRdfuXdmW2g+ZPY8zPcVFNNWXN1o9Audau2ItkhmaAkjmcCtJ0jUvcth7gAbIxwYMSPrzWI0/Urey0b0s6HBGJ7Dd6xj7irrQdXNs+G+VmQw7TmIq7H5C57ejLNqSqK2a2iqZesqfk81TdNrN/Ir0Stwa7JtFJS1wiFFFFAFFFFAJRS0UAUUUUAUUUhNALXJYCuGeuAJMUBxqNSFEkxWb6vbN+J4BxPernXwpCld27A9veojdPZyWYkACAPSl1svxtR2UV7qYtumkSGJw8H5cVOTo9yyA1u5kmXU8HEYP4/FUtzptrT3HuFQWKHLPBX+o8g8HkVXf90X0tvZQ7nC/yy8zHsTyQO1efJxUmsn9vRokpJWiRptNqF1Ie+yYLgKGJZ5BCnHA4MTU49AN627NddZLAIAoAjE5E/aswnV77bWtqGKMktDMxLcgIMtwcT3rXdLe94h3Og3jNsK8p6EscBoOV/fFZIR5aa1eiblq0yjv27PhGwTta2FDh8fNgbexUwSOeDMRVEthr6vZe4fDGFZVloUZknGMZq7+LukQXvu5GxWyPL5eeR/zNYTpum1YYG1vRWnD7gGBbduUEdyAZHNXvC4vk2iDnypItuhCxpzeS8fELZR3QqCBjC9zXfhBXtt4Ku2JA2qwQzA8xjdE5PPFReudMutctBiGLFYCYILCAZPYAmtTrtC2nsb7yfKpZtiqzNgAk7jCqBthQSeapm23yXvtGrBxjfL8GW1s+IVDZGDu3bwWmcHvP05qDdueEuIkls4ABJ/1Az61a3bzPDY8yqykCGAYcGJhoYSJPHI5qtuoHlWIB44G7zEzIniSf+CuR06Z6SdxtPZd6DQuLdq2oYl03SF3Kxclsx9Rn0UcjhOr9MW15Sw3bVJIIwOfySAJ9jUjpXWLyaYWtO6PcXyoroIXbg5BGAs5M/wCVTbzjUWFd0DO3lfKiWjafMR2PGR2j0q7HjiuUk9mLLnc38OqJnS7luwgtl5K892LH5iWPeZ71ada1RaybayCSg2DzFjM7Cf3+3pVFoLNtiTsIKgs5cnacxAk45xV1ptNbs3VuWQoVzFxZwwbvz8waDPpu9a9FcJRqPXRiyQinS7KvVpctg+IAERQXzMn0j0GM1k9N1HxbkgFRPlHBjgkV6lf6at+34lti4YHy9j2IH7jNZfq3TbZtKVCWnVwJE5ViFYkRjGfaPSsObx1BNR9/yUt8lT9ETQ3y7zyFUqnoMw0e/v7VbNo7uLmGYeowfWftFR/+i3bKb0HibeAnzY4gH/Wn9HqdVcVpdrRgldyLgyIkEVlhju1kTW9MqhDkX/RfDtpBCgnJE8VcaLVJABYA+5rzrqty6SGBAupAxhXBg8etMv1R1lbm5YicYP3rSvLUEoxVlk8UkvqevWrs8GaeDViPh34jtsvhn9IOfpV/0/rlq6CQYg962wzQaWyh45VdF0DS00jSJFOCriAtFFFAFFFFAFFFFAITTTtS3DTTNXDojvFVd7ra27ioRO7EDmofVOvLbfwtpLmNo4maqOnlBq0GpMuwJUgyoJjapHM88+lZcmZuSjF+9l8MS4uTNmLpILkQB8s8xVL1DqqpZaX2lyVXkmTgcVE+MutGwgQEruOWGIUdp9TxVBpfEFpdUWJWSyCN2AOT6etRz+TxfFK9bJ4sVq2UnVHffsjc5DEu3eCAAPbFTej6dnU3L9tDAIVWXds7oxyIJK49pNU9sXL63b1ky6wFJBYgEydoOB2z9audNobZuFDc273RGz85C4n0YyRu+lYeNq12apS/YsBb/lq1hVQzucgCC68wPXGKsvhA3LlttVeXaWO1B32pjcfcmfwKldJ+G9Orm4pbaWlF8RyJ4JI3Q3GJHbmu+s9OCWvBsXGt+aAiDdv3nK+okljggDk4FbMGBwXN7ZROal8q0Z/X9Xs6i/4R86CC3O0spkAnhh5Tj1j0NO697d22d4Dtkk43A/UZET9q03S+jW1tBHtwreYoZnP9Z5LAR3xFMahdO+5LcMUwVRoVSBIUkYHI9xVixOTuXTORnFOl6ML0yxb1D2ir+GybSzOMz9G5Jzj04jFTvjXVE2ma3cDLhTiJ3DbMziCZ+3vWd1t19Tfe28Ilvm0nAc/KztkuQZEHA9BNLqdI7lVcuUI3kL/VJjE+xjtjtWGcYwdJ6L3Lk1dlbpLD2lTc6+VQxnCwR/V9s4plbFy5cN1kOTJVGMwBI80YPfMU8dPuKLcuMQgAKYwfNgzlwBEH6e9W3UOq27Nv+SwchQCohRI5nBP70lJ3Udt/g0co8b69d3+SG1+FZhuJC/qUFyuGKblkMTAEzwfTmTo/HuMtkqLalQ5PDGcDzq0Hg4/1rLWtaiNBQKuZCMzAk4yWPoIBrb/DemGrsm7cuQxnaksNqoTt8ykHifUevFSnFwT9WY8UKt3ZG6xpPDTYjhXuOiRIZvKCxOe3lmex4qbq9de02lBFtSEUK5Jkcc7eYPNVqizZJF9T40HbDMxcyY2yBuGRn37VC6h10rZZbhG9kKFefsIiYJn2qXj5GtJMlLu2bL4A+I0ceGWwx/wt/ocftUn4w6U5vpdt7SNjgKTBL5JAPElZx7Gsf0rp4S349tvPAMCdsDMR/nWk6b1W91F4QBLSHaxb5y/ygj0EdhkbhWnJnjkg/qQkrkn+4ynXr2kCg2/EtsFAZCPIYyGBztGcxU1Ot/xdnsjTDgZP0B95GYwRUC70nwrj2brDmVKkywYSGIOO8duDVDp+pvo7hZbYcg4COpaVM5AJgexANZPiTl8tlOXHJNOJpemdIt3Guh713cMoX2wNnEjaM9iO+am/wty5ZS5b2OjpzHmUxkbTyJkYrG9M68L7QVZHKnew5Qj9R43D1UjNaTpWqfTs9olioaVnABwSFPpkH713HBOXGS2W43NrfoZudNuAvdttA2hnUjOBkCu0Lqgu7Wn9S7SMVb62y7efcSA0kLywOY+1T9Pqn27yFChQYOSajPGrcXss5PtFv8O6ljbAYEegbBir0V5xr+uut5XQlUwAcFS307Vuela0XrYcff6ivQwZFJcV6MeWDXzP2WFFIKWtBSFFJNFALRRRQHDiqfrGu8FC8TkD81dVD1ujFwEQDPIPBqE03F12Sg0ns8+e++quEnyqg3bgAWnsFqj1GqupdS4LZVg4Acx5vSR61pddpG0zN4SAAjIiDI9qq9L0e5edLmoubBuDlIlo5X6cfivJnCSl+v1PQ5Jx0O2rFzqNxF1LMqAliQIyOA0irDrutbS6XwdPDbDyTyCcj8YpjqvUfDubEuKltUxsOWn+on6U30vW2W05a5tc73LFlmF+Uf2n70cq1f3v+CEYNK2UHw9rGt3LjhVVCpLS0ASZAA9ZJxUjT6QO6as3N29oREBkASoLk8cngU7f6davsHsM8H9Nu2pxkSZbyjHLfXOas9N0+3YstsE7BuIYbmzJP8wAADt5RA9TXYQm9rr/AMJ6BNS6hZYqqgQRiAJAC/iPtVp0DqKm64YjdyBzsDdvqRB/+X2GR6r1RkUXXkg4QAeXvMDjaP3iPWKjo/V7djUpduXG2AlnVoliVbaSZyu/axPoCM8H1Z5opqK/4dzuKVUekfEuqW6RZcutvAfGDkFTgzA9D+OK46Sbdq34aIibCZCcMP6vcnBn6VU6i05AuNcfUbzueByDmUVeFHZcxHJzUPqnWTatjZDgMAkCDMGASB5RE8+kc1nm5wnyfXRm4NJfQrPifSzrJ0hO5kLXQqbwWbaFBaQAzAA7ee/ery/0C7Y0pvNcAZLRLrBcSACyr37H8invhDV23ZjeTz/OhYyDtPmIwPNMZj8VpL5XUWb1tvlYET9q5xhmTdElJx6PHn1Qdjde2X53wxR0DYV0mAARugHmee1S+k9J8hvAb0JkB9u5VwQCVPOef+DS6fVIHZLoAbjaVGY8szwePxFZ/qupNh2S3tS05UGAwyZ3KoHlAA2/4q8348snyJVRfjdK5FVdu2kvNatoEJI3PAZ8j5EHCj1PJ9gKttHoX1FwtYvi2pbay8s5SN2Jgd8/tiurvQUVrWoSAwYKw7MG8sx6iaj6fUrbVrunVboS3N9N6lNpEnaApJYAcggSCMwavvmk4/bZLnSps1Fu+tm2bdwJcT9bsQhCjhs/0/aMnmsynTUcXLuwm0slN24bgf1Gc+wJHaoY6lZuf+K26FgAwL7g0kzsEk5E9xFaHW3bjWDZtt84InuBwQCe/wBfX0wOtSjHiVTnFP7ipb8DSsVtiFQNOSTAkiTzjtT/AMH2rmn076kx/NbeEJgKPlBBjkgZGRxUTSMX0s3XtjckQ7lZxgEDKnt9feufhrqxu2W0z2ldVaUYym0MAyqVX03TzgEDtVcLjCTl6JSabVDnWdbcdX1DpBbaJBmFACwhwR3MZyTUTountks7sSGzJBBWTzJHqfvNM6R31ZNu62wW2gKpAmOCQfbt/ep/S7t1vFtIgZlZxvZgFbOJIBP7VBtq779kq0S+g6NNPccXtrqX3ByoE+UNkSYAIMGe01x13U2w5vDcqyQhBlXjtt94q3v3LaW1tjaXZGU+XlY2wYIP/rzUDqF5G0zBbao6MAqwNrCYIg9wDM1a5b06ogtMo+k/Et6XS4VVmYgSDKq0wQOMVO6Fq7tprqBmuQJSZbtJE/atD8N/DGj1FsvftbnONxZgQowI2mBwT96f03wv/BuzWnLoSTDRuT0E96m8UpLnH2RWRXxZR9OvjUsq3F2HdLAiA35r0PoxUJtQYBIx7Vk9PYfVuUVGXa0szLEZ4nt3/FbrQ6NbSgDJ7mr/ABVLbqkVeRJdEsUhMV1TbZrcZRuaK6iigHqKKKAKQGlpp1oDjVaVLi7XUEfuPoe1U/UOksqlrI3MFgAmD+e9W4ukc08rA8VXPGpLZOM3Ho86Fi1plZxbHiHD7pLEkeaA+QMjGO+Jp3qjl0SzbCorsu9zACycmP1EA/8A5W11/TbV+PEQNHB7/wC4zwcVjfijouqRQ2mti6oBkDyupnkKBBxHy/ivPn4049bRow5FfzMmrqLWltCzplED9TZJPdj6n3P4gVD0eu8Ml7hCrwWYwDPp6n2FVnRWu6gLNtbZwGLvuae+1NsLnHmk+1Z74qZjdKmEdGCIVltxMHvlhHr39xWuXkRS4xRfxik0iV1VBqbnhByllEDh9uCqkAKg7/t8pP1qOm9KtWdRcF1Hu2w0Le2vsUA+aSshe2J9Ke6na1Iti6E2hAYSckGRlI+pj196Y0nULuutrprFtgbSqHJXyrB+Y7u5Oc5JNYlyVtdeyVRdW9m0+GdGryyuDZCiFVtyue5V5wsg4/tVHrguqQ3Le4lhtdhwrJmZOJwME960uonS2lMBEYKiBf6iNqiFwKqup3FPkTyBF2hE8sBo/TwMjmDOan5M4qMYd0Zc/VnPStRbt3UuE9odFTENIZz6Dg/Yj0jZeRLZYERGIIIYHj615VqteUAYDzEbe8gDMgjvAIj3q4XqbWkSyjbht3sWGVZocBSeVg5+uIrni51BcZe+ivH82mV/VLiam8bcEBGYFgYYknzBe47jdSL0HU6m0xuXEBTdsUKYVedo4AnGTuPqTVX0TrYW9fe4m7c26V8wEjIA/f7mtXc6nc8Fr0om9C6ow2llGZ2rhZHE+uaryc4yaitdm2PFq2UGqtvasSju7Iu4l1UbFIg7YOSBMEn0xWm+E+kW9RaW4XC2/wClPKSQNp3fgYrPrqL2pBdLUIQoMlQxAkyF98Dn3q10HXrDagWwigqu5CwB4mSFBwYA5HpU8Lrc1+xF23SJ/VPh1lurd0lreiqxYb0gEZJ87Dt/zNRukdP/AIi+9y9vtoiKNgKHfMncTBwJIHf/ADd+LOq6o27SWbgVHeH2/M2Ny+bsuMgc/TFU/Ub9+zDC4EhcbG2lpZVIM/UcZwYqORweS4exxdVI6+KL/gKSii5bMqWDIWzJlgpkDtPrHE0z0bS3rah0gblG4esCBntiutNrLF8NYNsS0D6g4kHkEEzPrUrp+ma3Y2q7i4oyrZOORt7+xnNQnbgl+uySVPRX/wDSytx7jwu8Y2FokdiPptz3qT0nU3Qqpbtnexgqx2tiYZpHeMes0vTdVfe54+zfb27VGAQIlmMn0AyPcVP13VG3WzaUb2VgFbEARtJMGBJNVTV2nslEour371i6vj6lV2Euq7fKS8nbPPY81Z39ct2yzjkFTJHA/UTA5x69xVb0nq1xtWFvAF2faZ4USCI9oPOZq46L8OM157NpSLZUHHABbCmeDg/itHByqNb/AJIWlbZcfA3VQd9hzDgbkBwSk5/B/YitvY0bNO7Cn8n/AEqH0j4W0+nZbmwNcUHax/TODHv7/wBq0FelihxjRhnO3aGbNhUG1AAPQe/JPqadJiuWf0rkD1q0rO5mkNFIaASikoocH6KKKHQrlhXVFAMOlMlSMipbCmmSuHTlL/ZvzT8zxUZkpsErkUBzremJc80bXzDqBuBiJyCDj1BrK/8AQ7mlutq7jG8AuxdluCikyxI8zEtiSMQPQmdnbvg4ODT9U5MMZdaf1RJTklXo8wTq4uXJtbSHnKgGCCS5LTxgYjG3HJlDrHjdAMiSpWHxMSJyK3Ot6DZuMbgGxzMsojdPO4cN9efesJ8T/Dl5WD3N3hqMPaLYjILRlePp715uTxskPdr6/wCDRGUZKk6ZVdb6s160LUbYdTloA25HIkEECqi307UPdW8t1SqZZmMLA5Hvj7CnDrADtuHegPLruAjIlgP71J0+nsu6G7bZrLktbUEFd/lJWCYIHow9KhHk13/ayfw5VTaIXUrDsxcJKyZAjdyRJyJUD0yag9e1Ye4ARtUFRBKgMEUgn6YX8Vob2tuWAb9oB0SVexdVQdu7HmGVYevFJv0162fBL25I8S1dUOI58rdx3E12CUab9WiuOJxlTKTTKbQfUWAvIBVhuUzA4UyIzNSl6lLbLltnJXaogkFZggIRxk9z9ah3LSWm2O5CMzFBB2lYAJJAyQZgH6zxT+uDOgXTM9sdmnbvEyRvyVH3A+taG06vVlqTRY6NdRPgJYZliCQQNinA3biAY9OcUvSrVoXGuPbAdG2qLgYFCvELIg988Yip3wb1G3buNZMqzQW3f1LyJ7mM+8GtDqug29RfN8ghWVQw43lcAkfSPxSGNy1HTDlXfRjtSCrrduszLvhEUllRdvmY4yZwM/51OsXfEutctMr2nQKS6kFACZXafm5mcftNb7T6ZFXw0Rdo9hAqs6ppbQtsFRVEHc8RA7xHJq7+j1p7+wWTk6o85u6K9a1tpLV6UbLCMIFk7GPYMcDIyfat78W39lpNhRbjmFYiYBU7u4xx+R61mOk3bdzVPawodd5jnHlIB7dv3q3+K9M627bo5cJja8MSuDhuZgRn81XzcIuMvWv8nZQqSKL4W1lwB7JHieErjCkBnAEr/wDYwe4EwOBo16PpbSStsFwSzOWLHzEmPMcKJMAen1l3ooOoxpkBQwZGFWc+ZvX961fSegJYJdmLuxBzG1IAEKv25Mn6cVVixyyN0qRyeSMPezMWfhBtVct32JsKkHCje47DPyj3IP071utFo7dldltQo5Mcknkk8k+5qTTbv6c16OPFGCpGOc3J7Oy0U0xJ+lIBOTXQq0gCiuqK5JoBSa5JoJpAKAKK72UtAOUUUUAUlLSUAURRS0A2yU2yVIpCKAhslIjsvuPSpLJTbJXAOW7wb2PpTlQWSukvMuDkV0Fb1D4X090llQIxMkoAAxPJZeCffmsT8SfCV8W/DtLCrcFy2yZCtBVlIGVkGeIlcnNeoJcB4ruqJYIt2tMthmlHXaPn/qV68jqL4VlEb4WNw48wOG74HFdfxFsBCFLvuBUCW3L6Acny5+1e2dT6FptSCL1pWnvEN/iGaprPwPYtG41hmR7gUbmhyqgk7VngGazy8VpfU0f1EX+hg9NY/j2S2VFtAN7krBnJVVB4JBBP+9N9a0tzTjwUYEEckTgcZAxW6u/Cr21f+G27mDZdmklu5MGM+lZxfg7qLFjedGJx5WxtjChiQefaqZYJvbROOWC6ZjtFqzZvAJaN1iq7JkSSDw3GMZ7RXpHSbGsvhWvNbtJg7bcs/updsfcCqLQfBOtt3lYKFQArl1aF5n5iea3/AEnQ3bdsKwG4TmR6+1acKly4taq/yV5JRatNDy2AFg4A/f61Q9e86m2mB3jk1om0VxuXAHoBP+lN2+h2wdzEsfcwP2rcmkQhkjB3Z5z0XT7NQ9u3bLHEmJZh2B9Bkn6mtlp/hgu033Ph/ptj5vcM4PH0/NaSzp0QQihR/wCoAp6qpwjKrRzJ5Dk7WhnS6a3aQJbRUVeFUAAfYU9XLXAKaJLVMziu84FCrSgV1QHNFFIaAJoNFKBQCAU4q0oFdUAlFLRQBRRRQBRRRQBRRRQBRRRQBXJWuqKAZZKbZKlVyVoCGU9KVbjD3p9krkrQAupHfFOLcB70wUFcm3QEyaJqCEI4JroM3rQEyaWoe9vWiW9aAmVwWA71GgnuaUJQDxvDtXBcmgJXQFAIqV3RXNAE0k0E0lALRSgU4FoDhVpwClooAooooAooooAooooAooooAooooAooooAooooAooooArgrRRQHDLXNFFAFLRRQBFEUUUAtFFFAE0TRRQATSTRRQCV0q0UUA4BXVFFAFFFFAFFFFAFFFFAf/9k="
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
             </div>
-          </div>
-    </section>
+            <h3 class="mt-4 text-sm text-gray-700">Sprout Chaat</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$8.99 </p>
+          </a>
 
-    <section id="Combo">
-        <div class="">
-            <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-                <h1 style="font-family: 'Nunito Sans', sans-serif;font-weight: 400 ;font-size: calc(1em + 1vw); margin-top: 1%;margin-bottom: 5%; color: rgb(17, 17, 17);">Combo</h1>
-          
-              <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Noodle/fried rice with Chilli paneer </h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$11.99 </p>
-                </a>
-          
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Noodle/fried rice w gobi/veg mancurian  </h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
-                </a>
-            
-                <!-- More products... -->
-              </div>
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img
+                src="https://www.nayakskitchen.com/wp-content/uploads/2021/02/20210218_111233-scaled.jpg?v=1613540727"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
             </div>
-          </div>
-    </section>
+            <h3 class="mt-4 text-sm text-gray-700">Sev Puri</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$7.99 </p>
+          </a>
 
-    <section id="NaanRice">
-        <div class="">
-            <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-                <h1 style="font-family: 'Nunito Sans', sans-serif;font-weight: 400 ;font-size: calc(1em + 1vw); margin-top: 1%;margin-bottom: 5%; color: rgb(17, 17, 17);">Naans & Rice </h1>
-          
-              <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-                
-                <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Veg Fried Rice  </h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$10.99 </p>
-                  </a>
-                
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">White Basmati Rice  </h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$3.99 </p>
-                </a>
-
-                 <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">White Basmati Rice  </h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$3.99 </p>
-                </a>
-
-                <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Butter Naan  </h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$3.49 </p>
-                  </a>
-
-                  <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Garlic Naan  </h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$3.99 </p>
-                  </a>
-
-                  <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Plain Naan  </h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$3.99 </p>
-                  </a>
-            
-                <!-- More products... -->
-              </div>
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA3IKhspvZtl70n19OMx9MgVdJnY7Vv1WKWw&usqp=CAU"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
             </div>
-          </div>
-    </section>
+            <h3 class="mt-4 text-sm text-gray-700">Ragda pattice </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$8.99 </p>
+          </a>
 
-    <section id="NaanRice">
-        <div class="">
-            <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-                <h1 style="font-family: 'Nunito Sans', sans-serif;font-weight: 400 ;font-size: calc(1em + 1vw); margin-top: 1%;margin-bottom: 5%; color: rgb(17, 17, 17);">Sweets & Drinks</h1>
-          
-              <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-                
-                <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Ras Malai  </h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$6.99 </p>
-                  </a>
-                
-                <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Carrot Halwa  </h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$6.99 </p>
-                </a>
-
-                 <a href="#" class="group ImageFillAnimate">
-                  <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                  </div>
-                  <h3 class="mt-4 text-sm text-gray-700">Hot Tea </h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$2.99 </p>
-                </a>
-
-                <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Mango Lassi  </h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$3.99 </p>
-                  </a>
-
-                  <a href="#" class="group ImageFillAnimate">
-                    <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                      <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
-                    </div>
-                    <h3 class="mt-4 text-sm text-gray-700">Soda  </h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$2.99 </p>
-                  </a>
-
-            
-                <!-- More products... -->
-              </div>
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img
+                src="https://www.thespruceeats.com/thmb/2P1h-7rP6kr7VIl-7h66bMNlvaI=/2839x2839/smart/filters:no_upscale()/papdi-chaat-recipe-1958046-hero-01-100f6f30f05a4395a5c6bfa515fc087c.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
             </div>
-          </div>
-    </section>
+            <h3 class="mt-4 text-sm text-gray-700">Papdi Chaat</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$8.99 </p>
+          </a>
 
-    <script>
-        $(document).ready(function () {
-    target_offset = $('#Chaat').offset(),
-    target_top = target_offset.top;
-    $('html, body').animate({
-        scrollTop: target_top
-    }, 500);
-});
-    </script>
-        
-        <script src="" async defer></script>
-    </body>
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://www.cookwithmanali.com/wp-content/uploads/2019/09/Samosa-Chaat-480x270.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Samosa Chaat</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$8.99 </p>
+          </a>
+
+          <!-- More products... -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Roll">
+    <div class="">
+      <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h1
+          style="font-family: 'Nunito Sans', sans-serif;font-weight: 400 ;font-size: calc(1em + 1vw); margin-top: 1%;margin-bottom: 5%; color: rgb(17, 17, 17);">
+          Kathi Roll</h1>
+
+        <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://royalpaan.com/wp-content/uploads/2020/12/c847adf4-e94e-4f27-8733-3478dc022551.jpeg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Aloo Tikki Kathi Roll </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://spicecravings.com/wp-content/uploads/2020/12/Paneer-kathi-Roll-Featured-1.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Paneer Tikki Kathi Roll </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
+          </a>
+
+          <!-- More products... -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Street Food">
+    <div class="">
+      <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h1
+          style="font-family: 'Nunito Sans', sans-serif;font-weight: 400 ;font-size: calc(1em + 1vw); margin-top: 1%;margin-bottom: 5%; color: rgb(17, 17, 17);">
+          Street Food</h1>
+
+        <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://www.spiceupthecurry.com/wp-content/uploads/2016/07/vada-pav-recipe-6-500x500.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Vada Pav </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$4.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://indianvegrecipe.com/wp-content/uploads/2019/08/kutchi-dabeli-recipe-500x375.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Kachchi Dabeli (2pc) </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$7.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://static.toiimg.com/thumb/52416693.cms?width=1200&height=900" alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Pav Bhaji </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$11.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Chole Bhature </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
+          </a>
+
+          <!-- More products... -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Curries">
+    <div class="">
+      <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h1
+          style="font-family: 'Nunito Sans', sans-serif;font-weight: 400 ;font-size: calc(1em + 1vw); margin-top: 1%;margin-bottom: 5%; color: rgb(17, 17, 17);">
+          Curries</h1>
+
+        <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Veg Kofta Curry </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://www.cookwithmanali.com/wp-content/uploads/2019/08/Palak-Paneer-500x500.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Palak Paneer</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://mytastycurry.com/wp-content/uploads/2017/03/mix-veg.jpg" alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Achari Mix Veg</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Matar Paneer</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
+          </a>
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://www.spiceupthecurry.com/wp-content/uploads/2021/04/paneer-butter-masala-1.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Butter Paneer</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://www.cookclickndevour.com/wp-content/uploads/2020/05/Achari-paneer-recipe.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Achari Paneer</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img
+                src="https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2020/01/easy-chana-masala-pan-1024x1536.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Chana Masala</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/paneer-tikka-masala-recipe-005.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Paneer Tikka Masala</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
+          </a>
+
+          <!-- More products... -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Indo-chinese">
+    <div class="">
+      <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h1
+          style="font-family: 'Nunito Sans', sans-serif;font-weight: 400 ;font-size: calc(1em + 1vw); margin-top: 1%;margin-bottom: 5%; color: rgb(17, 17, 17);">
+          Indo-Chinese</h1>
+
+        <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://myheartbeets.com/wp-content/uploads/2019/08/indo-chinese-chilli-paneer.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Chili Paneer </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$11.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://www.whiskaffair.com/wp-content/uploads/2020/03/Hakka-Noodles-2-3.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Veg Hakka Noodle </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$11.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://www.whiskaffair.com/wp-content/uploads/2018/11/Vegetable-Fried-Rice-2-3.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Veg Fried Rice </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$10.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img
+                src="https://media.vogue.in/wp-content/uploads/2020/11/Gobhi-Manchurian-recipe-chinese-starters-1920x1080.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Gobi Manchurian</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$10.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://i.ytimg.com/vi/xkMbJCtaaqA/maxresdefault.jpg" alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Veg Manchurian</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$10.99 </p>
+          </a>
+
+          <!-- More products... -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Biryani">
+    <div class="">
+      <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h1
+          style="font-family: 'Nunito Sans', sans-serif;font-weight: 400 ;font-size: calc(1em + 1vw); margin-top: 1%;margin-bottom: 5%; color: rgb(17, 17, 17);">
+          Biryani</h1>
+
+        <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://www.whiskaffair.com/wp-content/uploads/2020/08/Veg-Biryani-2-3.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Veg Biryani </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$11.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://spicecravings.com/wp-content/uploads/2020/08/Achari-Paneer-Biryani-New-2.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Paneer Biryani </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
+          </a>
+
+          <!-- More products... -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Combo">
+    <div class="">
+      <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h1
+          style="font-family: 'Nunito Sans', sans-serif;font-weight: 400 ;font-size: calc(1em + 1vw); margin-top: 1%;margin-bottom: 5%; color: rgb(17, 17, 17);">
+          Combo</h1>
+
+        <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img
+                src="https://cdn3.mydukaan.io/app/image/700x700/?url=https://dukaan-us.s3.amazonaws.com/3658903/2e847eed-caac-4a1d-a050-591e86d1db0c/1627366393854-62915ac1-7084-460e-bd0b-7437d8e6605d.jpeg "
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Noodle/fried rice with Chilli paneer </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$11.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Noodle/fried rice w gobi/veg mancurian </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$12.99 </p>
+          </a>
+
+          <!-- More products... -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="NaanRice">
+    <div class="">
+      <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h1
+          style="font-family: 'Nunito Sans', sans-serif;font-weight: 400 ;font-size: calc(1em + 1vw); margin-top: 1%;margin-bottom: 5%; color: rgb(17, 17, 17);">
+          Naans & Rice </h1>
+
+        <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://www.whiskaffair.com/wp-content/uploads/2018/11/Vegetable-Fried-Rice-2-3.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Veg Fried Rice </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$10.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://healthynibblesandbits.com/wp-content/uploads/2019/08/How-to-Cook-Basmati-Rice-FF2.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">White Basmati Rice </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$3.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://incredible.kitchen/wp-content/uploads/2018/11/img_0444.jpg" alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Butter Naan </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$3.49 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://www.kitchensanctuary.com/wp-content/uploads/2021/03/Garlic-Naan-square-FS-42.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Garlic Naan </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$3.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://static.toiimg.com/photo/53338316.cms" alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Plain Naan </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$3.99 </p>
+          </a>
+
+          <!-- More products... -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="NaanRice">
+    <div class="">
+      <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h1
+          style="font-family: 'Nunito Sans', sans-serif;font-weight: 400 ;font-size: calc(1em + 1vw); margin-top: 1%;margin-bottom: 5%; color: rgb(17, 17, 17);">
+          Sweets & Drinks</h1>
+
+        <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://www.cookwithmanali.com/wp-content/uploads/2014/07/Rasmalai-Recipe.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Ras Malai </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$6.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Carrot Halwa </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$6.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://nationaltoday.com/wp-content/uploads/2021/10/National-Hot-Tea-Day.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Hot Tea </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$2.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/mango-lassi-2.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Mango Lassi </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$3.99 </p>
+          </a>
+
+          <a href="#" class="group ImageFillAnimate">
+            <div
+              class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <img
+                src="https://media.cntraveler.com/photos/544533ec5c1237d92c4f87c9/16:9/w_2580,c_limit/weird-sodas-tout.jpg"
+                alt="Image failed to load."
+                class="w-full h-full object-center object-cover group-hover:opacity-75 gridImage">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Soda </h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$2.99 </p>
+          </a>
+
+
+          <!-- More products... -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <script src="" async defer></script>
+</body>
+
 </html>
