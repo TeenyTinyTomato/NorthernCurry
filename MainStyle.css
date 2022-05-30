@@ -80,3 +80,9 @@
     color: white;
   }
   
+
+.gridImage{
+  min-height: 300px;
+  height: 300px;
+  max-height: 300px;
+}
