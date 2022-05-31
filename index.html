@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html style="
 width: 100%;
 height: 100%;
@@ -6,17 +10,16 @@ margin: 0;
 padding: 0;
 scroll-behavior: smooth;
 transition: all 0.5s;
-background-color:  rgb(255, 255, 255);">
+background-color:  #f8f3e9;">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>NorthernCurry</title>
-  <meta name="description" content="Our goal with Northerncurry is to create an unmatched immersive experience. The go-to place for whenever hunger takes control. A place enjoyable for both newbies and Critics. Never had Indian food before? We have various combos to make it easy for you to discover the new flavors. Already know what you want? We probably have it and the way you want it. Enjoying food is about much more than just the taste. It’s the sights, sounds, smells, the entire experience.">
-  
+  <meta name="description"
+    content="Our goal with Northerncurry is to create an unmatched immersive experience. The go-to place for whenever hunger takes control. A place enjoyable for both newbies and Critics. Never had Indian food before? We have various combos to make it easy for you to discover the new flavors. Already know what you want? We probably have it and the way you want it. Enjoying food is about much more than just the taste. It’s the sights, sounds, smells, the entire experience.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="MainStyle.css">
   <link rel="icon" type="image/x-icon" href="logo.svg">
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -24,337 +27,234 @@ background-color:  rgb(255, 255, 255);">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.4.2/pixi.min.js"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
 </head>
 
-<body>
+<!--background-image: url('g');background-position: center;background-repeat: no-repeat;                  border-bottom: 1px solid gainsboro;-->
 
-  <nav class="navbar fixed-top navbar-expand-sm navbar-light justify-content-between"
-    style="color: #2a2c35; height: 80px; background: rgba(256,256,256,1);padding-left: 10px;padding-right: 0px;">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse  justify-content-around" id="navbarText">
-        <a class="navbar-brand" href="#">
-          <h1
-            style="padding-top: 18%; font-size: calc(0.5em + 0.5vw);font-weight: 400;font-family: 'Montserrat', sans-serif;margin-top: -10%; color: rgb(51, 37, 11);">
-            NorthernCurry</h1>
-        </a>
-        <ul class="navbar-nav text-right" style="margin-left: 9.3%;">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://northerncurry.com/menu.html">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://northern-curry.square.site/">Online Order</a>
-          </li>
+<body style="
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
+transition: all 0.5s;
+background-color:  #f8f3e9;">
+  
+  <nav class="text-gray-600 body-font">
+    <div class="nav container-fluid mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center fixed-top" style="background-color: #464d33;">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-0 md:mb-0">
+        <h2 style=" font-size: 3vmin; color: #ffffff; font-family: 'Segatha', serif;">NorthernCurry</h2>
+        
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center hover:text-gray-400" style="color: #ffffff; font-family: 'Medline', serif;">
+        <a class="mr-5 hover:text-gray-400">Home</a>
+        <a href="https://northerncurry.com/menu" class="mr-5 hover:text-gray-400">Menu</a>
+        <a class=" hidden mr-5 hover:text-gray-400" >Careers</a>
+        <a class="hidden mr-5 hover:text-gray-400">About</a>
+        <a href="https://northern-curry.square.site/" class="mr-5 hover:text-gray-400">Order</a>
+      </nav>
+      <div> <a href="https://northern-curry.square.site/"><button
+        class="button buttonPD transition ease-in-out delay-150 duration-300">Order
+      </button></a>
+  </div>
 
-        </ul>
-
-        <!--
-
-                     <div class="row">
-                    <a href="https://neuro-glow.medium.com/neuroglow-mental-health-and-neurological-disorder-initiative-cfe1a3d09c0f"
-                        class="col"><button style="background-color: #313131;"
-                            class="button buttonPD">Menu</button></a>
-
-                    <a href="https://hack.ms/donate-neuroglow" class="col"><button
-                            class="button buttonPD">Donate</button></a>
-
-                </div>
-
-                -->
-
-      </div>
     </div>
   </nav>
 
+  <section id="Header" class="">
 
-
-  <div id="" class="container-fluid text-center"
-    style="font-family: 'Cormorant Garamond', serif;background-image: url('images/IMG_4502.jpg');background-position: top;background-repeat: no-repeat;filter: brightness(1);background-size: cover; height: 85%;width: 90%; margin-left: 5%;margin-right: 5%;margin-top: 4%;  border-radius: 3px;">
-
-    <h1 style="padding-top: 18%; font-size: calc(3em + 3vw);font-weight: 300; color: rgb(255, 255, 255);">
-      NorthernCurry</h1>
-    <h1
-      style="
-        font-family: 'Montserrat', sans-serif;padding-top: 0%; font-size: calc(1em + 1vw);font-weight: 300; color: rgb(109, 106, 106);">
-      Indian Cuisine</h1>
     <center>
-      <div style="margin-top: 4%;margin-bottom: 0%;"> <a href="https://northern-curry.square.site/"><button
-            class="button buttonPD transition ease-in-out delay-150 bg-orange-400 hover:bg-orange-500 duration-300">Order
-          </button></a>
-      </div>
-
+      <h2 style="margin-top: 15%;  font-size: 4vmin; color: #464d33; font-family: 'Segatha', serif;">NorthernCurry Indian Restaurant</h2>
+      <h2 style="margin-top: -1%;  font-size: 16vmin; color: #464d33; font-family: 'Medline';">Authentic <span
+          style="margin-top: -1%;  font-size: 10vmin; color: #464d33; font-family: 'Segatha';">flavors</span>,</h2>
+      <h2 style="margin-top: -1%;  font-size: 16vmin; color: #464d33; font-family: 'Medline';">For You</h2>
     </center>
+  </section>
 
-    
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
     </div>
-    <!--
-    <div id="" class="container-fluid text-center"
-        style="font-family: 'Cormorant Garamond', serif;background-color: rgb(218, 193, 255); height: 85%;width: 90%; margin-left: 5%;margin-right: 5%;margin-top: 4%;  border-radius: 3px;">
+  </div>
 
-        <h1 style="padding-top: 18%; font-size: calc(3em + 3vw);font-weight: 300; color: rgb(255, 255, 255);">
-            NorthernCurry</h1>
-        <h1
-            style="
-        font-family: 'Montserrat', sans-serif;padding-top: 0%; font-size: calc(1em + 1vw);font-weight: 300; color: rgb(109, 106, 106);">
-            Indian Cuisine</h1>
-        <center>
-            <div style="margin-top: 4%;margin-bottom: 0%;"> <a href="https://northern-curry.square.site/"><button
-                        class="button buttonPD transition ease-in-out delay-150 bg-purple-400 hover:-translate-y-1 hover:scale-110 hover:bg-purple-600 duration-300">Order
-                    </button></a>
+
+  <section class="text-gray-600 body-font" style="margin-top: 5%">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+              src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/8/2/0/ZA0304H_saag-paneer-spinach-with-indian-cheese_s4x3.jpg.rend.hgtvcom.616.462.suffix/1488497807789.jpeg">
+            <div class="px-8 py-20 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Palak Paneer</h2>
+              <h2 class="title-font text-lg font-medium text-gray-900 mb-3">Veg Curry</h2>
             </div>
-
-        </center>
-
-
-
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+              src="https://www.licious.in/blog/wp-content/uploads/2020/10/butter-chicken--600x600.jpg">
+            <div class="px-8 py-20 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Butter Chicken</h2>
+              <h2 class="title-font text-lg font-medium text-gray-900 mb-3">Non-Veg Curry</h2>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+              src="https://simmertoslimmer.com/wp-content/uploads/2018/01/South-Indian-chicken-biryani.jpg">
+            <div class="px-8 py-20 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Chicken Biryani</h2>
+              <h2 class="title-font text-lg font-medium text-gray-900 mb-3">Biryani</h2>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
--->
+  </section>
 
 
 
-    <!--
-    <section id="Block">
+  <section class="text-gray-600 body-font" style="margin-top: 10%; ">
+    <div class="container-fluid mx-auto flex flex-wrap">
+      <div class="flex flex-wrap -mx-0 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+        <h2 style="margin-top: 00%; margin-left: 10%; margin-right: 10%;  font-size: 3vmin; color: #464d33; font-family: 'Segatha', serif;">Freshly Prepared</h2>
+        <h2 style="margin-top: 10%; margin-left: 10%; margin-right: 10%; line-height: 93%;  font-size: 12vmin; color: #464d33; font-family: 'Medline';">Made from Scratch Daily</h2>
+        <a style="margin-top: 4%; margin-bottom: 30%; margin-left: 10%; margin-right: 10%;" href="https://northern-curry.square.site/">
+          <h2 style=" font-size: 2vmin; color: #464d33; font-family: 'Medline';">Discover now</h2></a>
+      </div>
+      <div class="lg:w-1/2 sm:w-1/3 w-full overflow-hidden mt-0 sm:mt-0">
+        <img class="object-cover object-center w-full h-full" style="max-height: 80%;" src="https://yournorthcounty.com/wp-content/uploads/2017/10/indian-restaurants-san-diego-north-county.jpg" alt="stats">
+      </div>
+    </div>
+  </section>
 
-        <div class="container-fluid"
-            style="margin-top: 4% ;margin-bottom: 0% ;height: auto; width: 90%; margin-right: 5%;margin-left: 5%;border-radius: 2px; background-color: #f7f7f7  ;">
-            <div class="relative overflow-hidden">
-                <div class="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
-                    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
-                        <div class="sm:max-w-lg">
-                            <h1 class="text-4xl font font-medium tracking-tight text-gray-900 sm:text-6xl">Enjoy our
-                                Every day Specials</h1>
-                            <p class="mt-4 text-xl text-gray-500">Curries · Streetfoods · Chaats · Kathi Rolls  · Biryanis · Biryanis  </p>
-                        </div>
-                        <div>
-                            <div class="mt-10">
-                                <div aria-hidden="true"
-                                    class="pointer-events-none lg:absolute lg:inset-y-0 lg:max-w-7xl lg:mx-auto lg:w-full">
-                                    <div
-                                        class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
-                                        <div class="flex items-center space-x-6 lg:space-x-8">
-                                            <div class="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                                                <div
-                                                    class="w-44 h-64 rounded-lg overflow-hidden sm:opacity-0 lg:opacity-100">
-                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"
-                                                        alt="" class="w-full h-full object-center object-cover">
-                                                </div>
-                                                <div class="w-44 h-64 rounded-lg overflow-hidden">
-                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"
-                                                        alt="" class="w-full h-full object-center object-cover">
-                                                </div>
-                                            </div>
-                                            <div class="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                                                <div class="w-44 h-64 rounded-lg overflow-hidden">
-                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"
-                                                        alt="" class="w-full h-full object-center object-cover">
-                                                </div>
-                                                <div class="w-44 h-64 rounded-lg overflow-hidden">
-                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"
-                                                        alt="" class="w-full h-full object-center object-cover">
-                                                </div>
-                                                <div class="w-44 h-64 rounded-lg overflow-hidden">
-                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"
-                                                        alt="" class="w-full h-full object-center object-cover">
-                                                </div>
-                                            </div>
-                                            <div class="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                                                <div class="w-44 h-64 rounded-lg overflow-hidden">
-                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"
-                                                        alt="" class="w-full h-full object-center object-cover">
-                                                </div>
-                                                <div class="w-44 h-64 rounded-lg overflow-hidden">
-                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"
-                                                        alt="" class="w-full h-full object-center object-cover">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+  <section id="Header" class="">
 
-                                <a href="https://northern-curry.square.site"
-                                    class="inline-block text-center bg-orange-400 border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-orange-500">Order Online</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <center style="max-width:  45%; margin-left: 27.5%;margin-right: 27.5%;">
+      <h2 style="margin-top: -1%;  font-size: 10vmin; color: #464d33; font-family: 'Medline';">our selection
+        of <span
+          style="margin-top: -1%;  font-size: 10vmin; color: #464d33; font-family: 'Segatha';">captivating</span> <br> delicacies</h2>
+    </center>
+  </section>
+
+<!-- component -->
+<div class="flex justify-center items-center" style="margin-top: 8%;">
+  <!--- more free and premium Tailwind CSS components at https://tailwinduikit.com/ --->
+  <div class="2xl:mx-auto 2xl:container py-12 px-4 sm:px-6 xl:px-20 2xl:px-0 w-full">
+    <div class="flex flex-col jusitfy-center items-center space-y-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-4 md:gap-x-8 w-full">
+        <div class="relative group flex justify-center items-center h-full w-full">
+          <img class="object-center object-cover h-full w-full" src="https://www.funfoodfrolic.com/wp-content/uploads/2017/07/Indo-Chinese.jpg" alt="Indo-Chinese" />
+          <a class="bottom-4  absolute text-base font-medium leading-none text-gray-800" href="https://northern-curry.square.site/"><button
+            class="button buttonGD transition ease-in-out delay-150 duration-300">Indo-Chinese
+          </button></a>
+          <div class="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50"></div>
         </div>
 
-    </section id="Block">
-
-    <section id="Block">
-
-        <div class="container-fluid"
-            style="margin-top: 4% ;margin-bottom: 0% ;height: auto; width: 90%; margin-right: 5%;margin-left: 5%;border-radius: 2px; background-color: #f7f7f7  ;">
-            <section class="text-gray-600 body-font">
-                <div class="container px-5 py-24 mx-auto flex flex-wrap">
-                  <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
-                    <div class="w-full sm:p-4 px-4 mb-6">
-                      <h1 class="title-font font-medium text-xl mb-2 text-gray-900">Moon hashtag pop-up try-hard offal truffaut</h1>
-                      <div class="leading-relaxed">Pour-over craft beer pug drinking vinegar live-edge gastropub, keytar neutra sustainable fingerstache kickstarter.</div>
-                    </div>
-                    <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-                      <h2 class="title-font font-medium text-3xl text-gray-900">2.7K</h2>
-                      <p class="leading-relaxed">Users</p>
-                    </div>
-                    <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-                      <h2 class="title-font font-medium text-3xl text-gray-900">1.8K</h2>
-                      <p class="leading-relaxed">Subscribes</p>
-                    </div>
-                    <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-                      <h2 class="title-font font-medium text-3xl text-gray-900">35</h2>
-                      <p class="leading-relaxed">Downloads</p>
-                    </div>
-                    <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-                      <h2 class="title-font font-medium text-3xl text-gray-900">4</h2>
-                      <p class="leading-relaxed">Products</p>
-                    </div>
-                  </div>
-                  <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
-                    <img class="object-cover object-center w-full h-full" src="https://dummyimage.com/600x300" alt="stats">
-                  </div>
-                </div>
-              </section>
-        </div>
-
-    </section id="Block">
-
-  -->
-
-    <section id="Dark"
-      style="background-color: rgb(4, 4, 4);border-radius: 20px 20px 0% 0%;width: 100%;margin-top: 5%;padding-bottom: 0%; height: auto;">
-
-
-
-
-      <section id="BigBlock" style="padding-top: 10%; margin-left: 10%;margin-right: 10%;">
-
-        <div class="row" style="margin-top: 0%;">
-
-          <div class="col-xxl align-self-center d-flex justify-content-center " style="width: 100%;">
-            <h1 style=" font-size: calc(1.7em + 1.7vw); color: #ffffff;padding-right: 30%; line-height: 150%;">
-              <mark style="
-                        color:#000000; background-color: rgb(184, 255, 162);" class="blue">Pleasanton</mark> 4000
-              Pimlico Dr
-            </h1>
+        <div class="flex flex-col space-y-4 md:space-y-8 mt-4 md:mt-0">
+          <div class="relative group flex justify-center items-center h-full w-full">
+            <img class="object-center object-cover h-full w-full" src="https://www.licious.in/blog/wp-content/uploads/2020/10/butter-chicken--600x600.jpg" alt="Non-Veg" />
+            <a class="bottom-4  absolute text-base font-medium leading-none text-gray-800" href="https://northern-curry.square.site/"><button
+              class="button buttonGD transition ease-in-out delay-150 duration-300">Curries
+            </button></a>
+            <div class="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50"></div>
           </div>
-          <div class="col-xxl" style="background-color: rgba(118, 93, 228, 0); ">
-
-
-            <div class="container px-0 py-0 mx-auto flex sm:flex-nowrap flex-wrap" style="height: 600px">
-              <div class=" bg-gray-300 rounded-lg overflow-hidden p-10 flex items-end justify-start relative">
-                <iframe class="absolute inset-0" style="filter: grayscale(0.9) contrast(1) opacity(1);" marginheight="0"
-                  marginwidth="0" title="map" scrolling="no" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.8426612158014!2d-121.87177838255616!3d37.699893999999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fe93a9086d1bb%3A0xffbd2ac268b6694d!2sEATHAI!5e0!3m2!1sen!2sus!4v1649203585142!5m2!1sen!2sus"
-                  width="100%" height="900px" frameborder="0"></iframe>
-                <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
-                  <div class="lg:w-1/2 px-6">
-                    <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
-                    <p class="mt-1">4000 Pimlico Dr #106, Pleasanton, CA 94588</p>
-                  </div>
-                  <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
-                    <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-                    <a class="text-indigo-500 leading-relaxed">northerncurrycatering@gmail.com</a>
-                    <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-                    <p class="leading-relaxed">925-425-7292</p>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
+          <div class="relative group flex justify-center items-center h-full w-full">
+            <img class="object-center object-cover h-full w-full" src="https://masalaandchai.com/wp-content/uploads/2021/10/Samosa-Chaat-with-Chai.jpg" alt="Chaats" />
+            <a class="bottom-4  absolute text-base font-medium leading-none text-gray-800" href="https://northern-curry.square.site/"><button
+              class="button buttonGD transition ease-in-out delay-150 duration-300">Chaats
+            </button></a>
+            <div class="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50"></div>
           </div>
         </div>
 
-
-      </section>
-
-
-      <section class="text-gray-400 body-font">
-        <div class="container flex flex-wrap px-5 py-24 mx-auto items-center">
-          <div class="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-800">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-100">NorthernCurry LLC</h1>
-            <p class="leading-relaxed text-base">"Northern Curry" serves authentic Indian street food including variety
-              of Paneer wraps, Curries and Biryani. Our dishes are made from scratch following traditional
-              street food recipe. </p>
-            <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-          <div class="flex flex-col md:w-1/2 md:pl-12">
-            <h2 class="title-font font-semibold text-gray-600 tracking-wider text-sm mb-3">Important Links</h2>
-            <nav class="flex flex-wrap list-none -mb-1">
-              <li class="lg:w-1/3 mb-1 w-1/2">
-                <a class="text-gray-400 hover:text-gray-800">Home</a>
-              </li>
-              <li class="lg:w-1/3 mb-1 w-1/2">
-                <a class="text-gray-400 hover:text-gray-800">Menu</a>
-              </li>
-              <li class="lg:w-1/3 mb-1 w-1/2">
-                <a class="text-gray-400 hover:text-gray-800">About Us</a>
-              </li>
-              <li class="lg:w-1/3 mb-1 w-1/2">
-                <a class="text-gray-400 hover:text-gray-800">Careers</a>
-              </li>
-              <li class="lg:w-1/3 mb-1 w-1/2">
-                <a class="text-gray-400 hover:text-gray-800">Catering</a>
-              </li>
-              <li class="lg:w-1/3 mb-1 w-1/2">
-                <a class="text-gray-400 hover:text-gray-800">Rewards</a>
-              </li>
-              <li class="lg:w-1/3 mb-1 w-1/2">
-                <a class="text-gray-400 hover:text-gray-800">Nutrition</a>
-              </li>
-              <li class="lg:w-1/3 mb-1 w-1/2">
-                <a class="text-gray-400 hover:text-gray-800">Contact</a>
-              </li>
-            </nav>
-          </div>
+        <div class="relative group justify-center items-center h-full w-full hidden lg:flex">
+          <img class="object-center object-cover h-full w-full" src="https://myfoodstory.com/wp-content/uploads/2021/10/Paneer-Makhani-Biryani-3-2.jpg" alt="Biryani" />
+          <a class="bottom-4  absolute text-base font-medium leading-none text-gray-800" href="https://northern-curry.square.site/"><button
+            class="button buttonGD transition ease-in-out delay-150 duration-300">Biryani
+          </button></a>
+          <div class="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50"></div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</div>
 
-    </section>
-
-
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollToPlugin.min.js"></script>
-
-
-    <script src="code.js" async defer></script>
-
-    <script></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"></script>
-
+<section class=" hidden body-font">
+  <div class="container flex flex-wrap px-5 py-24 mx-auto items-center"  style="color: #464d33;">
+    <div class="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 " style="color: #2a2e1e;">NorthernCurry LLC</h1>
+      <p class="leading-relaxed text-base">"Northern Curry" serves authentic Indian street food including variety
+        of Paneer wraps, Curries and Biryani. Our dishes are made from scratch following traditional
+        street food recipe. </p>
+      <a class=" inline-flex items-center mt-4"> Learn More
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+    <div class="flex flex-col md:w-1/2 md:pl-12">
+      <h2 class="title-font font-semibold text-gray-400 tracking-wider text-sm mb-3">Important Links</h2>
+      <nav class="flex flex-wrap list-none -mb-1" style="color: #464d33;">
+        <li class="lg:w-1/3 mb-1 w-1/2">
+          <a class=" hover:text-gray-800">Home</a>
+        </li>
+        <li class="lg:w-1/3 mb-1 w-1/2">
+          <a class=" hover:text-gray-800">Menu</a>
+        </li>
+        <li class="lg:w-1/3 mb-1 w-1/2">
+          <a class=" hover:text-gray-800">About Us</a>
+        </li>
+        <li class="lg:w-1/3 mb-1 w-1/2">
+          <a class=" hover:text-gray-800">Careers</a>
+        </li>
+        <li class="lg:w-1/3 mb-1 w-1/2">
+          <a class=" hover:text-gray-800">Catering</a>
+        </li>
+        <li class="lg:w-1/3 mb-1 w-1/2">
+          <a class=" hover:text-gray-800">Rewards</a>
+        </li>
+        <li class="lg:w-1/3 mb-1 w-1/2">
+          <a class=" hover:text-gray-800">Nutrition</a>
+        </li>
+        <li class="lg:w-1/3 mb-1 w-1/2">
+          <a class=" hover:text-gray-800">Contact</a>
+        </li>
+      </nav>
+    </div>
+  </div>
+</section>
+  
+  <script src="code.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 
 </html>
