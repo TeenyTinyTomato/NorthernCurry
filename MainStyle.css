@@ -107,6 +107,9 @@
    .MenuHeader {
     margin-top: 10%;
   }
+  .scrollbar{
+    margin-top: 0;
+  }
 }
 
 .nav-item{
