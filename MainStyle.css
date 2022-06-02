@@ -125,10 +125,6 @@
 }
 
 
-.nav-item{
-  white-space: nowrap;
-}
-
-.navbar-nav a.nav-link.active {
-  color: #000000 !important;
+.nav-pills > li > a.active {
+  background-color: #5b6243 !important;
 }
