@@ -113,10 +113,6 @@
   white-space: nowrap;
 }
 
-.nav-link {
-  color: white !important;
-}
-.nav-link.active {
-  color: #ffffff !important;
-  background-color: #3f452e;
+.navbar-nav a.nav-link.active {
+  color: #000000 !important;
 }
