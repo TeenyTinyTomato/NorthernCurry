@@ -100,8 +100,11 @@
 
 }
 
-@media only screen and (max-width: 600px) {
-  .MenuHeader {
+@media screen and (max-width:767px){
+  .notMobile{
+     display:none;
+   }
+   .MenuHeader {
     margin-top: 10%;
   }
 }
