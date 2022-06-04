@@ -118,6 +118,10 @@
   margin-top: 90px;
 }
 
+.mobileonly{
+  visibility: hidden;
+}
+
 @media screen and (max-width:767px){
   .notMobile{
      display:none;
@@ -138,6 +142,9 @@
   }
   .scrollbarR{
     margin-top: 60px;
+  }
+  .mobileonly{
+    visibility: visible;
   }
 }
 
